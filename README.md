@@ -1,0 +1,1 @@
+# netzabbix2hw
