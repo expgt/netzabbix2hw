@@ -94,7 +94,9 @@ else:
 
 ### Задание 8
 
-![Discovery](https://github.com/expgt/netzabbix2hw/blob/main/task8.png)
+![Discovery](https://github.com/expgt/netzabbix2hw/blob/main/task8_discovery.png)
+
+![Rule](https://github.com/expgt/netzabbix2hw/blob/main/task8_rule.png)
 
 ---
 
