@@ -23,7 +23,7 @@
 
 ### Задание 1
 
-![Template](https://github.com/expgt/netmonhw/blob/main/task1.png)
+![Template](https://github.com/expgt/netzabbix2hw/blob/main/task1.png)
 
 ---
 
@@ -34,27 +34,27 @@
 
 ### Задание 3
 
-![Hosts](https://github.com/expgt/netmonhw/blob/main/task2-3.png)
+![Hosts](https://github.com/expgt/netzabbix2hw/blob/main/task2-3.png)
 
 ---
 
 ### Задание 4
 
-![Dashboard](https://github.com/expgt/netmonhw/blob/main/task4.png)
+![Dashboard](https://github.com/expgt/netzabbix2hw/blob/main/task4.png)
 
 ---
 
 ### Задание 5
 
-![Map](https://github.com/expgt/netmonhw/blob/main/task5.png)
+![Map](https://github.com/expgt/netzabbix2hw/blob/main/task5.png)
 
 ---
 
 ### Задание 6
 
-![Latest data bash](https://github.com/expgt/netmonhw/blob/main/task6.png)
+![Latest data bash](https://github.com/expgt/netzabbix2hw/blob/main/task6.png)
 
-\```bash
+\```
 #!/bin/bash
 if [ "$1" = 1 ]; then
    echo "Rozaev"
@@ -71,9 +71,9 @@ fi
 
 ### Задание 7
 
-![Latest data python](https://github.com/expgt/netmonhw/blob/main/task7.png)
+![Latest data python](https://github.com/expgt/netzabbix2hw/blob/main/task7.png)
 
-\```python
+\```
 import sys
 from datetime import datetime
 
@@ -94,13 +94,14 @@ else:
 
 ### Задание 8
 
-![Discovery](https://github.com/expgt/netmonhw/blob/main/task8.png)
+![Discovery](https://github.com/expgt/netzabbix2hw/blob/main/task8.png)
 
 ---
 
 ### Задание 9
 
-![Vagrantfile](https://github.com/expgt/netmonhw/blob/main/Vagrantfile)
+![Vagrantfile](https://github.com/expgt/netzabbix2hw/blob/main/Vagrantfile)
 
-![zabbix-agent](https://github.com/expgt/netmonhw/blob/main/zabbix-agent.sh)
+![zabbix-agent](https://github.com/expgt/netzabbix2hw/blob/main/zabbix-agent.sh)
+
 ---
