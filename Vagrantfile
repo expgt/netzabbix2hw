@@ -2,61 +2,50 @@
 # vi: set ft=ruby :
 
 # VM array
-# Массив виртмашин
 virt_machines=[
   {
     :hostname => "zabbixagent1",
-    :ip => "192.168.0.20"
+    :ip => "192.168.232.197"
   },
   {
     :hostname => "zabbixagent2",
-    :ip => "192.168.0.21"
+    :ip => "192.168.232.198"
   }
 ]
 
 # Show VM GUI
-# Показывать гуй виртмашины
 HOST_SHOW_GUI = false 
 
 # VM RAM
-# Оперативная память ВМ
 HOST_MEMMORY = "512" 
 
 # VM vCPU
-# Количество ядер ВМ
 HOST_CPUS = 1
 
 # Network adapter to bridge
-# В какой сетевой адаптер делать бридж
 #HOST_BRIDGE = "Intel(R) Ethernet Connection (2) I219-V" 
 HOST_BRIDGE = "Intel(R) Wireless-AC 9560"
 
 # Which box to use
-# Из какого бокса выкатываемся
-HOST_VM_BOX = "generic/ubuntu2004" 
+HOST_VM_BOX = "generic/ubuntu2404" 
 
 ################################################
 # Parameters passed to provision script
-# Параметры передаваемые в скрипт инициализации
 ################################################
 
 # Script to use while provisioning
-# Скрипт который будет запущен в процессе настройки
 HOST_CONFIIG_SCRIPT = "zabbix-agent.sh" 
 
 # Additional user
-# Дополнительный пользователь
-HOST_USER = 'test'
+HOST_USER = 'linu'
 
 # Additional user pass. Root pass will be same
-# Пароль дополнительного пользователя. Пароль рута будет таким же
-HOST_USER_PASS = '123456789' 
+HOST_USER_PASS = '1221' 
 
 # Run apt dist-upgrade
-# Выполнить apt dist-upgrade
 HOST_UPGRADE = 'false' 
 
-ZABBIX_SERVER_IP = '192.168.0.138'
+ZABBIX_SERVER_IP = '192.168.232.195'
 
 Vagrant.configure("2") do |config|
 	virt_machines.each do |machine|
@@ -69,7 +58,7 @@ Vagrant.configure("2") do |config|
 				current_vm.gui = HOST_SHOW_GUI
 				current_vm.memory = HOST_MEMMORY
 				current_vm.cpus = HOST_CPUS
-				override.vm.provision "shell", path: 'zabbix-agent.sh', args: [	'test', 	'123456789',	'false', 	machine[:hostname], 	machine[:ip],	'192.168.0.138'], run: "once"
+				override.vm.provision "shell", path: 'zabbix-agent.sh', args: [	'linu', 	'1221',	'false', 	machine[:hostname], 	machine[:ip],	'192.168.232.195'], run: "once"
 			end
 		end
 	end

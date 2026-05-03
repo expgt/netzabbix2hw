@@ -4,9 +4,9 @@ sed -i 's/us.archive.ubuntu.com/mirror.hoster.kz/g' /etc/apt/sources.list
 #ru
 #sed -i 's/us.archive.ubuntu.com/mirror.linux-ia64.org/g' /etc/apt/sources.list
 
-useradd $1 -s /bin/bash -d /home/test
-mkdir /home/test
-chown -R test:test /home/test
+useradd $1 -s /bin/bash -d /home/linu
+mkdir /home/linu
+chown -R test:test /home/linu
 echo ''$1'    ALL=(ALL:ALL) NOPASSWD: ALL' >> /etc/sudoers
 
 usermod --password $(openssl passwd -6 $2) root
