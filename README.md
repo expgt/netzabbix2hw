@@ -54,7 +54,7 @@
 
 ![Latest data bash](https://github.com/expgt/netzabbix2hw/blob/main/task6.png)
 
-\```
+```bash
 #!/bin/bash
 if [ "$1" = 1 ]; then
    echo "Rozaev"
@@ -65,7 +65,7 @@ elif [ "$1" = 2 ]; then
       exit 1
             
 fi
-\```
+```
 
 ---
 
@@ -73,7 +73,7 @@ fi
 
 ![Latest data python](https://github.com/expgt/netzabbix2hw/blob/main/task7.png)
 
-\```
+```python
 import sys
 from datetime import datetime
 
@@ -88,7 +88,7 @@ elif (sys.argv[1] == '2'):
                 
 else:
     print(f"unknown input: {sys.argv[1]}")
-\```
+```
 
 ---
 
